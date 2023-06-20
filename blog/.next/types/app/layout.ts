@@ -1,4 +1,4 @@
-// File: /Users/lennarddorst/projects/markdown-blog/app/layout.jsx
+// File: /Users/lennarddorst/projects/markdown-blog/blog/app/layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
