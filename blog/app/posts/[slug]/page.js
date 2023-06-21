@@ -1,10 +1,10 @@
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
-//const e = require("../../../posts")
+
 
 const getPostMetadata = () => {
-  const folder = "../../../";
+  const folder = "/posts";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
   const slugs = markdownPosts.map((file) => file.replace(".md", ""));
@@ -50,7 +50,7 @@ const PostPage = (props) => {
 
       <br />
 
-      <article className="flex prose justify-center">
+      <article className="prose">
         <Markdown>{post.content}</Markdown>
       </article>
     </div>
