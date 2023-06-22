@@ -33,7 +33,7 @@ async def process_video(url: str):
         return {"status": "error", "message": str(e)}
 
 
-@app.get("")
+@app.get("/health")
 async def handler():
     print("Request")
     return {"status": "up"}
