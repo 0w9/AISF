@@ -1,8 +1,14 @@
+from flask import Flask, render_template
 from fastapi import FastAPI
 from pytube import YouTube
 import replicate
 
-app = FastAPI()
+app = Flask(__name__)
+
+
+@app.route("/")
+def home():
+    return render_template('index.html')
 
 
 class YoutubeVideoProcessor:
@@ -32,13 +38,5 @@ async def process_video(url: str):
     except Exception as e:
         return {"status": "error", "message": str(e)}
 
-
-@app.get("/health")
-async def handler():
-    print("Request")
-    return {"status": "up"}
-
-
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    app.run()  # (debug=False,host='0.0.0.0')
