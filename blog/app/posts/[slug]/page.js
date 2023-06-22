@@ -43,11 +43,11 @@ const PostPage = (props) => {
   const post = getPostContent(slug);
 
   return (
-    <div className="flex items-center">
+    <div>
       <p className="text-3xl text-white">{post.data.title}</p>
       <a className="text-xl text-white">{post.data.subtitle}</a>
       
-      <article className="prose lg:prose-lg">
+      <article className="prose lg:prose-lg text-white items-center mt-20">
         <Markdown>{post.content}</Markdown> 
       </article>
     </div>
