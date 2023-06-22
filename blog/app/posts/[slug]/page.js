@@ -2,10 +2,14 @@ import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 
-const getPostContent = (slug) => {
-  const folder = "../posts";
+const getPostContent = async (slug) => {
+  /*const folder = "../posts";
   const file = `${folder}/${slug}.md`;
   const content = fs.readFileSync(file, "utf-8");
+  */
+
+  const req = await fetch(`https://raw.githubusercontent.com/0w9/AISF/main/blog/posts/${slug}.md`)
+  const content = req.text;
   const matterResult = matter(content);
   return matterResult;
 };
