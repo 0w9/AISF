@@ -880,6 +880,12 @@ video {
 .flex {
   display: flex;
 }
+.w-full {
+  width: 100%;
+}
+.w-80 {
+  width: 20rem;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -940,9 +946,6 @@ video {
 }
 .text-center {
   text-align: center;
-}
-.align-middle {
-  vertical-align: middle;
 }
 .text-3xl {
   font-size: 1.875rem;

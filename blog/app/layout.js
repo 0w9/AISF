@@ -30,9 +30,9 @@ export default function RootLayout({ children }) {
       <body>
         <div className="mb-10">{header}</div>
 
-        <div className="flex sm:gap-4 lg:gap-8 sm:flex-row flex-col flex-wrap justify-center text-center">
+
           {children}
-        </div>
+
       </body>
     </html>
   );

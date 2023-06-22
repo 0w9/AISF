@@ -1,7 +1,7 @@
 import fs from "fs";
-import Markdown from "markdown-to-jsx";
+import ReactMarkdown from 'react-markdown'
 import matter from "gray-matter";
-
+import React from "react";
 
 const getPostMetadata = () => {
   const folder = "./posts";
@@ -42,13 +42,19 @@ const PostPage = (props) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
 
+  var isDark = true;
+
+  const setIsDark = (value) => {
+    isDark = value
+  }
+
   return (
     <div>
       <p className="text-3xl text-white">{post.data.title}</p>
       <a className="text-xl text-white">{post.data.subtitle}</a>
       
-      <article className="prose lg:prose-lg text-white items-center mt-20">
-        <Markdown>{post.content}</Markdown> 
+      <article class="prose mt-20">
+        <ReactMarkdown className="text-white">{post.content}</ReactMarkdown>
       </article>
     </div>
   );
