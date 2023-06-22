@@ -4,7 +4,7 @@ import matter from "gray-matter";
 
 
 const getPostMetadata = () => {
-  const folder = "/posts";
+  const folder = "./posts";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith(".md"));
   const slugs = markdownPosts.map((file) => file.replace(".md", ""));
@@ -50,7 +50,7 @@ const PostPage = (props) => {
 
       <br />
 
-      <article className="prose">
+      <article className="flex prose:lg justify-center">
         <Markdown>{post.content}</Markdown>
       </article>
     </div>

@@ -301,15 +301,11 @@
         "static/css/app/layout.css"
       ]
     },
-    "/Users/lennarddorst/projects/markdown-blog/blog/app/page": {
+    "/Users/lennarddorst/projects/markdown-blog/blog/app/posts/[slug]/page": {
       "modules": [],
       "files": []
     },
     "/Users/lennarddorst/projects/markdown-blog/blog/app/posts/page": {
-      "modules": [],
-      "files": []
-    },
-    "/Users/lennarddorst/projects/markdown-blog/blog/app/posts/[slug]/page": {
       "modules": [],
       "files": []
     }
