@@ -293,10 +293,6 @@
     }
   },
   "entryCSSFiles": {
-    "/Users/lennarddorst/projects/markdown-blog/blog/app/posts/[slug]/page": {
-      "modules": [],
-      "files": []
-    },
     "/Users/lennarddorst/projects/markdown-blog/blog/app/layout": {
       "modules": [
         "/Users/lennarddorst/projects/markdown-blog/blog/app/globals.css"
@@ -305,15 +301,19 @@
         "static/css/app/layout.css"
       ]
     },
+    "/Users/lennarddorst/projects/markdown-blog/blog/app/posts/[slug]/page": {
+      "modules": [],
+      "files": []
+    },
     "/Users/lennarddorst/projects/markdown-blog/blog/app/posts/page": {
       "modules": [],
       "files": []
     },
-    "/Users/lennarddorst/projects/markdown-blog/blog/app/page": {
+    "/Users/lennarddorst/projects/markdown-blog/blog/app/posts/[slug]/layout": {
       "modules": [],
       "files": []
     },
-    "/Users/lennarddorst/projects/markdown-blog/blog/app/posts/[slug]/layout": {
+    "/Users/lennarddorst/projects/markdown-blog/blog/app/page": {
       "modules": [],
       "files": []
     }
