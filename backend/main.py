@@ -4,6 +4,7 @@ import replicate
 
 app = FastAPI()
 
+
 class YoutubeVideoProcessor:
     def __init__(self, url):
         self.url = url
@@ -11,13 +12,15 @@ class YoutubeVideoProcessor:
 
     def downloadMp3(self):
         print("Downloading mp3...")
-        self.path = YouTube(self.url, use_oauth=True, allow_oauth_cache=True).streams.filter(only_audio=True).first().download()
+        self.path = YouTube(self.url, use_oauth=True, allow_oauth_cache=True).streams.filter(
+            only_audio=True).first().download()
         print("Downloaded to " + self.path + "\n")
         return self.path
-    
+
     def transcribe(self):
         print("Transcribing...")
         # return the model call
+
 
 @app.post("/process-video")
 async def process_video(url: str):
@@ -28,6 +31,12 @@ async def process_video(url: str):
         return {"status": "success", "output": output}
     except Exception as e:
         return {"status": "error", "message": str(e)}
+
+
+@app.get("")
+async def handler():
+    return {"status": "up"}
+
 
 if __name__ == "__main__":
     import uvicorn
