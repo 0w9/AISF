@@ -247,7 +247,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/posts/page:static/chunks/app/posts/page.js"
       ],
       "async": false
     },
@@ -255,7 +255,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/posts/page:static/chunks/app/posts/page.js"
       ],
       "async": false
     },
@@ -263,7 +263,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/posts/page:static/chunks/app/posts/page.js"
       ],
       "async": false
     },
@@ -271,7 +271,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/posts/page:static/chunks/app/posts/page.js"
       ],
       "async": false
     },
@@ -279,7 +279,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/posts/page:static/chunks/app/posts/page.js"
       ],
       "async": false
     },
@@ -287,7 +287,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/posts/page:static/chunks/app/posts/page.js"
       ],
       "async": false
     }
@@ -306,6 +306,10 @@
       "files": []
     },
     "/Users/lennarddorst/projects/markdown-blog/blog/app/page": {
+      "modules": [],
+      "files": []
+    },
+    "/Users/lennarddorst/projects/markdown-blog/blog/app/posts/page": {
       "modules": [],
       "files": []
     }
