@@ -35,6 +35,7 @@ async def process_video(url: str):
 
 @app.get("")
 async def handler():
+    print("Request")
     return {"status": "up"}
 
 
